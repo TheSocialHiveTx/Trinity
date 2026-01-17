@@ -76,14 +76,13 @@
     <main class="flex-grow py-24 px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-20 reveal">
-                <h2 class="text-sm font-black text-blue-500 uppercase tracking-[0.5em] mb-4 mono">// BUILD_CONFIG_V2.0
+                <h2 class="text-sm font-black text-blue-500 uppercase tracking-[0.5em] mb-4 mono">// BUILD SPECS
                 </h2>
                 <h1
                     class="text-6xl md:text-8xl font-black text-white italic tracking-tighter uppercase mb-6 leading-none">
                     START A <span class="glow-text text-blue-500">BUILD</span></h1>
                 <p class="text-zinc-400 text-lg max-w-2xl mx-auto font-medium">
-                    Initialize your build sequence. Fill out the terminal specs below and we'll process your requisition
-                    within 48 hours.
+                    Fill out the form below and we'll get back to you with a quote and timeline within 48 hours.
                 </p>
             </div>
 
@@ -95,25 +94,28 @@
                 <div class="mb-16">
                     <h3
                         class="text-blue-500 font-black uppercase tracking-[0.3em] mb-10 border-b border-zinc-800 pb-4 italic mono text-xs">
-                        // 01_IDENTIFICATION</h3>
+                        // 1. CONTACT INFO</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div>
                             <label
-                                class="block text-zinc-500 text-[10px] font-black uppercase tracking-widest mb-3 mono">USER_FULL_NAME</label>
+                                class="block text-zinc-500 text-[10px] font-black uppercase tracking-widest mb-3 mono">FULL
+                                NAME</label>
                             <input required name="name" type="text"
                                 class="w-full bg-zinc-950 border border-zinc-800 focus:border-blue-500 p-4 text-white outline-none transition-colors font-bold uppercase text-sm tracking-widest"
                                 placeholder="John Doe" />
                         </div>
                         <div>
                             <label
-                                class="block text-zinc-500 text-[10px] font-black uppercase tracking-widest mb-3 mono">USER_EMAIL_ADDRESS</label>
+                                class="block text-zinc-500 text-[10px] font-black uppercase tracking-widest mb-3 mono">EMAIL
+                                ADDRESS</label>
                             <input required name="email" type="email"
                                 class="w-full bg-zinc-950 border border-zinc-800 focus:border-blue-500 p-4 text-white outline-none transition-colors font-bold text-sm tracking-widest"
                                 placeholder="john@example.com" />
                         </div>
                         <div class="md:col-span-2">
                             <label
-                                class="block text-zinc-500 text-[10px] font-black uppercase tracking-widest mb-3 mono">COMMS_LINK_PHONE</label>
+                                class="block text-zinc-500 text-[10px] font-black uppercase tracking-widest mb-3 mono">PHONE
+                                NUMBER</label>
                             <input required name="phone" type="tel"
                                 class="w-full bg-zinc-950 border border-zinc-800 focus:border-blue-500 p-4 text-white outline-none transition-colors font-bold uppercase text-sm tracking-widest"
                                 placeholder="(555) 000-0000" />
@@ -125,21 +127,22 @@
                 <div class="mb-16">
                     <h3
                         class="text-blue-500 font-black uppercase tracking-[0.3em] mb-10 border-b border-zinc-800 pb-4 italic mono text-xs">
-                        // 02_PLATFORM_SELECTION</h3>
+                        // 2. PLATFORM SELECTION</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div>
                             <label
-                                class="block text-zinc-500 text-[10px] font-black uppercase tracking-widest mb-3 mono">CHASSIS_TYPE</label>
+                                class="block text-zinc-500 text-[10px] font-black uppercase tracking-widest mb-3 mono">CASE
+                                TYPE</label>
                             <select id="case-type-select" name="case-type"
                                 class="w-full bg-zinc-950 border border-zinc-800 focus:border-blue-500 p-4 text-white outline-none transition-colors appearance-none font-black uppercase tracking-[0.2em] text-xs cursor-pointer">
-                                <option value="Toolbox">Toolbox [ST_IND]</option>
-                                <option value="Pelican">Pelican Case [MIL_SPEC]</option>
-                                <option value="Other">Other / Custom [USER_SUPPLIED]</option>
+                                <option value="Toolbox">Toolbox [Standard]</option>
+                                <option value="Pelican">Pelican Case [Heavy Duty]</option>
+                                <option value="Other">Other / Custom Case</option>
                             </select>
                         </div>
                         <div>
                             <label
-                                class="block text-zinc-500 text-[10px] font-black uppercase tracking-widest mb-3 mono">PAYLOAD_CAPACITY</label>
+                                class="block text-zinc-500 text-[10px] font-black uppercase tracking-widest mb-3 mono">SIZE</label>
                             <select name="size"
                                 class="w-full bg-zinc-950 border border-zinc-800 focus:border-blue-500 p-4 text-white outline-none transition-colors appearance-none font-black uppercase tracking-[0.2em] text-xs cursor-pointer">
                                 <option value="Small">Small [S1]</option>
@@ -149,7 +152,8 @@
                         </div>
                         <div id="other-case-container" class="md:col-span-2 hidden">
                             <label
-                                class="block text-zinc-500 text-[10px] font-black uppercase tracking-widest mb-3 mono">SPECIFY_CUSTOM_CHASSIS</label>
+                                class="block text-zinc-500 text-[10px] font-black uppercase tracking-widest mb-3 mono">SPECIFY
+                                CUSTOM CASE</label>
                             <input name="other-case-details" type="text"
                                 class="w-full bg-zinc-950 border border-zinc-800 focus:border-blue-500 p-4 text-white outline-none transition-colors font-bold uppercase text-sm"
                                 placeholder="Cooler, vintage suitcase, etc." />
@@ -161,53 +165,57 @@
                 <div class="mb-16">
                     <h3
                         class="text-blue-500 font-black uppercase tracking-[0.3em] mb-10 border-b border-zinc-800 pb-4 italic mono text-xs">
-                        // 03_POWER_AUDIO_GRID</h3>
+                        // 3. POWER & AUDIO</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
                         <div>
                             <label
-                                class="block text-zinc-500 text-[10px] font-black uppercase tracking-widest mb-5 mono">ENERGY_CORE</label>
+                                class="block text-zinc-500 text-[10px] font-black uppercase tracking-widest mb-5 mono">POWER
+                                TYPE</label>
                             <div class="space-y-4">
                                 <label class="flex items-center space-x-4 cursor-pointer group">
                                     <input type="radio" name="power" value="Battery only"
                                         class="w-4 h-4 accent-blue-600 border-zinc-800" />
                                     <span
-                                        class="text-zinc-400 font-bold uppercase tracking-widest text-[10px] group-hover:text-white transition-colors">BATTERY_SOLO</span>
+                                        class="text-zinc-400 font-bold uppercase tracking-widest text-[10px] group-hover:text-white transition-colors">BATTERY
+                                        ONLY</span>
                                 </label>
                                 <label class="flex items-center space-x-4 cursor-pointer group">
                                     <input type="radio" name="power" value="Battery + wall"
                                         class="w-4 h-4 accent-blue-600 border-zinc-800" />
                                     <span
-                                        class="text-zinc-400 font-bold uppercase tracking-widest text-[10px] group-hover:text-white transition-colors">HYBRID_AC_DC</span>
+                                        class="text-zinc-400 font-bold uppercase tracking-widest text-[10px] group-hover:text-white transition-colors">PLUG
+                                        & BATTERY</span>
                                 </label>
                                 <label class="flex items-center space-x-4 cursor-pointer group">
                                     <input type="radio" name="power" value="Battery + vehicle"
                                         class="w-4 h-4 accent-blue-600 border-zinc-800" />
                                     <span
-                                        class="text-zinc-400 font-bold uppercase tracking-widest text-[10px] group-hover:text-white transition-colors">VEHICLE_LINK_12V</span>
+                                        class="text-zinc-400 font-bold uppercase tracking-widest text-[10px] group-hover:text-white transition-colors">VEHICLE
+                                        LINK (12V)</span>
                                 </label>
                             </div>
                         </div>
                         <div>
                             <label
-                                class="block text-zinc-500 text-[10px] font-black uppercase tracking-widest mb-5 mono">OUTPUT_DRIVERS</label>
+                                class="block text-zinc-500 text-[10px] font-black uppercase tracking-widest mb-5 mono">SPEAKERS</label>
                             <select name="speakers"
                                 class="w-full bg-zinc-950 border border-zinc-800 focus:border-blue-500 p-4 text-white outline-none transition-colors appearance-none font-black uppercase tracking-[0.2em] text-xs cursor-pointer">
-                                <option value="Recommend">SYS_RECOMMEND</option>
-                                <option value="Dual 4.5">DUAL_4.5_COAXIAL</option>
-                                <option value="Dual 5.25">DUAL_5.25_COMPONENT</option>
-                                <option value="Single 6.5">HI_OUTPUT_6.5_SINGLE</option>
+                                <option value="Recommend">RECOMMENDED</option>
+                                <option value="Dual 4.5">DUAL 4.5" COAXIAL</option>
+                                <option value="Dual 5.25">DUAL 5.25" COMPONENT</option>
+                                <option value="Single 6.5">HIGH OUTPUT 6.5" SINGLE</option>
                             </select>
                         </div>
                     </div>
                 </div>
 
                 <button type="submit"
-                    class="w-full bg-blue-600 hover:bg-blue-500 text-white font-black uppercase tracking-[0.4em] py-8 rounded-sm transition-all shadow-[0_0_50px_rgba(59,130,246,0.3)] italic text-2xl animate-tactical">
-                    INITIALIZE_BUILD_SEQUENCE_
+                    class="w-full bg-blue-600 hover:bg-blue-500 text-white font-black uppercase tracking-[0.4em] py-6 rounded-sm transition-all shadow-[0_0_50px_rgba(59,130,246,0.3)] italic text-xl animate-tactical">
+                    SUBMIT BUILD REQUEST
                 </button>
 
                 <p class="text-zinc-600 text-[9px] text-center mt-8 uppercase tracking-[0.3em] font-black mono italic">
-                    -- ACCESS RESTRICTED // SUBJECT TO QUEUE AVAILABILITY --
+                    -- ORDER QUEUE ACTIVE // WE'RE BUILDING AS FAST AS WE CAN --
                 </p>
 
                 <!-- Rivet Details -->
@@ -244,7 +252,7 @@
                 </div>
 
                 <div>
-                    <h4 class="text-blue-500 font-black uppercase tracking-[0.3em] mb-8 mono text-xs">NAV_LINKS</h4>
+                    <h4 class="text-blue-500 font-black uppercase tracking-[0.3em] mb-8 mono text-xs">SITE LINKS</h4>
                     <ul class="space-y-4 text-zinc-400 font-bold uppercase tracking-widest text-sm">
                         <li><a href="build.html" class="hover:text-white transition-colors">Start Build</a></li>
                         <li><a href="gallery.html" class="hover:text-white transition-colors">Arsenal</a></li>
@@ -254,7 +262,7 @@
                 </div>
 
                 <div>
-                    <h4 class="text-blue-500 font-black uppercase tracking-[0.3em] mb-8 mono text-xs">LOCATION_DATA</h4>
+                    <h4 class="text-blue-500 font-black uppercase tracking-[0.3em] mb-8 mono text-xs">LOCATION</h4>
                     <p class="text-white font-bold mb-2">HOUSTON, TEXAS</p>
                     <p class="text-zinc-500 text-xs italic leading-relaxed">
                         "Whatever you do, work at it with all your heart..." <br />— Colossians 3:23
@@ -264,10 +272,10 @@
 
             <div
                 class="border-t border-zinc-900 pt-12 flex flex-col md:flex-row justify-between items-center text-zinc-600 text-[10px] font-black uppercase tracking-[0.2em] mono">
-                <p>&copy; 2026 TRINITY_AUDIO_CONCEPTS // ALL_RIGHTS_RESERVED</p>
+                <p>&copy; 2026 trinity audio concepts // all rights reserved</p>
                 <div class="flex space-x-8 mt-6 md:mt-0">
-                    <a href="#" class="hover:text-zinc-400">PRIVACY_POLICY</a>
-                    <a href="#" class="hover:text-zinc-400">TERMS_OF_SERVICE</a>
+                    <a href="#" class="hover:text-zinc-400">Privacy Policy</a>
+                    <a href="#" class="hover:text-zinc-400">Terms of Service</a>
                 </div>
             </div>
         </div>
