@@ -13,6 +13,39 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Lightbox Logic
+    const lightboxModal = document.getElementById('lightbox-modal');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxClose = document.getElementById('lightbox-close');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    if (lightboxModal && lightboxImg && lightboxClose) {
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const img = item.querySelector('img');
+                if (img) {
+                    lightboxImg.src = img.src;
+                    lightboxModal.classList.add('active');
+                    document.body.style.overflow = 'hidden'; // Lock scroll
+                }
+            });
+        });
+
+        const closeLightbox = () => {
+            lightboxModal.classList.remove('active');
+            document.body.style.overflow = ''; // Unlock scroll
+        };
+
+        lightboxClose.addEventListener('click', (e) => {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        lightboxModal.addEventListener('click', () => {
+            closeLightbox();
+        });
+    }
+
     // FAQ Accordion
     const faqButtons = document.querySelectorAll('.faq-button');
     faqButtons.forEach(button => {
@@ -39,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Gallery Filtering
     const filterButtons = document.querySelectorAll('.filter-btn');
-    const galleryItems = document.querySelectorAll('.gallery-item');
+    // galleryItems is already defined above in lightbox logic
 
     filterButtons.forEach(btn => {
         btn.addEventListener('click', () => {
