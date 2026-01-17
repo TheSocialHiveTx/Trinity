@@ -40,7 +40,7 @@ body::before {
             rgba(0, 0, 0, 0.15) 50%), linear-gradient(90deg,
             rgba(255, 0, 0, 0.02),
             rgba(0, 255, 0, 0.01),
-            rgba(0, 0, 255, 0.02));
+            rgba(0, 255, 0, 0.02));
     z-index: 1000;
     background-size: 100% 4px, 4px 100%;
     pointer-events: none;
@@ -160,6 +160,7 @@ body::before {
     background: radial-gradient(circle at 35% 35%, #52525b, #18181b);
     border-radius: 50%;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), inset -1px -1px 2px rgba(255, 255, 255, 0.1);
+    position: relative;
 }
 
 .rivet::after {
@@ -171,4 +172,57 @@ body::before {
     height: 1px;
     background: rgba(0, 0, 0, 0.3);
     transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* Lightbox Modal */
+#lightbox-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(3, 3, 3, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 2000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: zoom-out;
+}
+
+#lightbox-modal.active {
+    display: flex;
+}
+
+#lightbox-img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border: 1px solid rgba(0, 128, 255, 0.3);
+    box-shadow: 0 0 50px rgba(0, 128, 255, 0.2);
+    transform: scale(0.9);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#lightbox-modal.active #lightbox-img {
+    transform: scale(1);
+}
+
+#lightbox-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 2100;
+    transition: all 0.3s;
+}
+
+#lightbox-close:hover {
+    color: var(--neon-blue);
+    transform: scale(1.1);
+}
+
+.cursor-zoom-in {
+    cursor: zoom-in;
 }

@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
             item.addEventListener('click', () => {
                 const img = item.querySelector('img');
                 if (img) {
-                    lightboxImg.src = img.src;
+                    lightboxImg.src = img.getAttribute('src');
                     lightboxModal.classList.add('active');
                     document.body.style.overflow = 'hidden'; // Lock scroll
                 }
