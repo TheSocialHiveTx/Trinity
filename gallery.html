@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Arsenal | Trinity Audio Concepts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="selection:bg-blue-600 selection:text-white">
+    <div class="scanlines"></div>
+    <header class="sticky top-0 z-50 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex flex-col items-start group">
+                    <span class="text-xl md:text-2xl font-black tracking-tighter text-white glow-text italic flicker">
+                        TRINITY <span class="text-blue-500">AUDIO</span> CONCEPTS
+                    </span>
+                    <span class="text-[10px] tracking-[0.3em] font-bold text-zinc-500 uppercase -mt-1 mono">
+                        // ACCESSING_DATABASE...
+                    </span>
+                </a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html"
+                        class="text-sm font-bold uppercase tracking-widest transition-all hover:text-blue-500 text-zinc-400">Home</a>
+                    <a href="build.html"
+                        class="text-sm font-bold uppercase tracking-widest transition-all hover:text-blue-500 text-zinc-400">Start
+                        a Build</a>
+                    <a href="gallery.html"
+                        class="text-sm font-bold uppercase tracking-widest transition-all hover:text-blue-500 text-blue-500 glow-text">Gallery</a>
+                    <a href="faq.html"
+                        class="text-sm font-bold uppercase tracking-widest transition-all hover:text-blue-500 text-zinc-400">FAQ</a>
+                    <a href="about.html"
+                        class="text-sm font-bold uppercase tracking-widest transition-all hover:text-blue-500 text-zinc-400">About</a>
+                    <a href="contact.html"
+                        class="text-sm font-bold uppercase tracking-widest transition-all hover:text-blue-500 text-zinc-400">Contact</a>
+                </nav>
+                <button id="menu-btn" class="md:hidden p-2 text-zinc-400 hover:text-white">
+                    <svg id="menu-open-icon" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                    <svg id="menu-close-icon" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow py-24 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-24 reveal">
+                <h2 class="text-sm font-black text-blue-500 uppercase tracking-[0.5em] mb-4 mono">// RECENT_DEPLOYMENTS
+                </h2>
+                <h1
+                    class="text-6xl md:text-8xl font-black text-white italic tracking-tighter uppercase mb-6 leading-none">
+                    THE <span class="glow-text text-blue-500">ARSENAL</span></h1>
+                <p class="text-zinc-400 text-lg max-w-2xl mx-auto font-medium">A field-proven showcase of customized
+                    hardware engineered for high-intensity audio output.</p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-6 mb-20 reveal">
+                <button
+                    class="filter-btn px-10 py-3 rounded-sm font-black uppercase tracking-[0.2em] text-[10px] transition-all border bg-blue-600 border-blue-500 text-white italic"
+                    data-filter="All">_ALL_FILES</button>
+                <button
+                    class="filter-btn px-10 py-3 rounded-sm font-black uppercase tracking-[0.2em] text-[10px] transition-all border bg-zinc-900/50 border-zinc-800 text-zinc-500 hover:text-white hover:border-blue-500/50 italic"
+                    data-filter="Toolbox">_TOOLBOX</button>
+                <button
+                    class="filter-btn px-10 py-3 rounded-sm font-black uppercase tracking-[0.2em] text-[10px] transition-all border bg-zinc-900/50 border-zinc-800 text-zinc-500 hover:text-white hover:border-blue-500/50 italic"
+                    data-filter="Pelican">_PELICAN</button>
+                <button
+                    class="filter-btn px-10 py-3 rounded-sm font-black uppercase tracking-[0.2em] text-[10px] transition-all border bg-zinc-900/50 border-zinc-800 text-zinc-500 hover:text-white hover:border-blue-500/50 italic"
+                    data-filter="Other">_CUSTOM</button>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item reveal group relative overflow-hidden bg-zinc-900/50 border border-zinc-800 rounded-sm"
+                    data-category="Toolbox">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="https://picsum.photos/seed/build1/1200/800" alt="Rig"
+                            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-30 grayscale group-hover:grayscale-0 group-hover:opacity-100" />
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent"></div>
+                    <div class="absolute bottom-10 left-10 right-10">
+                        <span
+                            class="inline-block px-3 py-1 bg-blue-600/10 border border-blue-500/30 text-blue-400 font-black text-[9px] uppercase tracking-[0.3em] mb-4 mono">CHASSIS:
+                            TOOLBOX_PRO</span>
+                        <h3
+                            class="text-white font-black text-2xl italic uppercase tracking-tighter glow-text group-hover:translate-x-2 transition-transform duration-500">
+                            THE_COBALT_MINER</h3>
+                    </div>
+                    <div class="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="neon-dot w-2 h-2"></div>
+                    </div>
+                </div>
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item reveal group relative overflow-hidden bg-zinc-900/50 border border-zinc-800 rounded-sm"
+                    data-category="Pelican">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="https://picsum.photos/seed/build2/1200/800" alt="Rig"
+                            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-30 grayscale group-hover:grayscale-0 group-hover:opacity-100" />
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent"></div>
+                    <div class="absolute bottom-10 left-10 right-10">
+                        <span
+                            class="inline-block px-3 py-1 bg-blue-600/10 border border-blue-500/30 text-blue-400 font-black text-[9px] uppercase tracking-[0.3em] mb-4 mono">CHASSIS:
+                            MIL_SPEC_PELI</span>
+                        <h3
+                            class="text-white font-black text-2xl italic uppercase tracking-tighter glow-text group-hover:translate-x-2 transition-transform duration-500">
+                            STEALTH_OPERATOR</h3>
+                    </div>
+                    <div class="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="neon-dot w-2 h-2"></div>
+                    </div>
+                </div>
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item reveal group relative overflow-hidden bg-zinc-900/50 border border-zinc-800 rounded-sm"
+                    data-category="Toolbox">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="https://picsum.photos/seed/build3/1200/800" alt="Rig"
+                            class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-30 grayscale group-hover:grayscale-0 group-hover:opacity-100" />
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent"></div>
+                    <div class="absolute bottom-10 left-10 right-10">
+                        <span
+                            class="inline-block px-3 py-1 bg-blue-600/10 border border-blue-500/30 text-blue-400 font-black text-[9px] uppercase tracking-[0.3em] mb-4 mono">CHASSIS:
+                            INDUSTRIAL_BOX</span>
+                        <h3
+                            class="text-white font-black text-2xl italic uppercase tracking-tighter glow-text group-hover:translate-x-2 transition-transform duration-500">
+                            RUSTY_CHROME</h3>
+                    </div>
+                    <div class="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="neon-dot w-2 h-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-zinc-950 border-t border-zinc-800 pt-12 pb-12 text-center">
+        <p class="text-zinc-600 text-[9px] font-black uppercase tracking-[0.5em] mono">// DATA_STREAM_TERMINATED</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

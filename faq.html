@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequent Questions | Trinity Audio Concepts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="selection:bg-blue-600 selection:text-white">
+    <div class="scanlines"></div>
+    <header class="sticky top-0 z-50 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex flex-col items-start group">
+                    <span class="text-xl md:text-2xl font-black tracking-tighter text-white glow-text italic flicker">
+                        TRINITY <span class="text-blue-500">AUDIO</span> CONCEPTS
+                    </span>
+                    <span class="text-[10px] tracking-[0.3em] font-bold text-zinc-500 uppercase -mt-1 mono">
+                        // QUERYING_SUPPORT_PROTOCOL
+                    </span>
+                </a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html"
+                        class="text-sm font-bold uppercase tracking-widest transition-all hover:text-blue-500 text-zinc-400">Home</a>
+                    <a href="build.html"
+                        class="text-sm font-bold uppercase tracking-widest transition-all hover:text-blue-500 text-zinc-400">Start
+                        a Build</a>
+                    <a href="gallery.html"
+                        class="text-sm font-bold uppercase tracking-widest transition-all hover:text-blue-500 text-zinc-400">Gallery</a>
+                    <a href="faq.html"
+                        class="text-sm font-bold uppercase tracking-widest transition-all hover:text-blue-500 text-blue-500 glow-text">FAQ</a>
+                    <a href="about.html"
+                        class="text-sm font-bold uppercase tracking-widest transition-all hover:text-blue-500 text-zinc-400">About</a>
+                    <a href="contact.html"
+                        class="text-sm font-bold uppercase tracking-widest transition-all hover:text-blue-500 text-zinc-400">Contact</a>
+                </nav>
+                <button id="menu-btn" class="md:hidden p-2 text-zinc-400 hover:text-white">
+                    <svg id="menu-open-icon" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                    <svg id="menu-close-icon" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow py-24 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-24 reveal">
+                <h2 class="text-sm font-black text-blue-500 uppercase tracking-[0.5em] mb-4 mono">// TECHNICAL_FAQ</h2>
+                <h1
+                    class="text-6xl md:text-8xl font-black text-white italic tracking-tighter uppercase mb-6 leading-none">
+                    SYSTEM <span class="glow-text text-blue-500">INTEL</span></h1>
+                <p class="text-zinc-400 text-lg max-w-2xl mx-auto font-medium">Resolving common inquiries regarding
+                    hardware specifications and deployment timelines.</p>
+            </div>
+
+            <div class="space-y-6 reveal">
+                <div
+                    class="bg-zinc-900/50 border border-zinc-800 rounded-sm overflow-hidden transition-all group hover:border-blue-500/50">
+                    <button
+                        class="faq-button w-full flex items-center justify-between p-8 text-left hover:bg-zinc-800/30 transition-colors">
+                        <span
+                            class="text-white font-black uppercase tracking-[0.2em] text-sm italic group-hover:text-blue-400 transition-colors">BUILD_TIME_ESTIMATE_?</span>
+                        <span class="faq-icon text-blue-500 transition-transform duration-300">
+                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                        </span>
+                    </button>
+                    <div
+                        class="faq-content px-8 pb-8 text-zinc-400 font-medium leading-relaxed hidden border-t border-zinc-800/50 pt-8 mt-[-1px] reveal">
+                        Typical lead times are 2-3 weeks from the date your build slot is secured. Rush orders (7-10
+                        days) are available for an additional fee depending on parts availability.
+                    </div>
+                </div>
+
+                <div
+                    class="bg-zinc-900/50 border border-zinc-800 rounded-sm overflow-hidden transition-all group hover:border-blue-500/50">
+                    <button
+                        class="faq-button w-full flex items-center justify-between p-8 text-left hover:bg-zinc-800/30 transition-colors">
+                        <span
+                            class="text-white font-black uppercase tracking-[0.2em] text-sm italic group-hover:text-blue-400 transition-colors">WEATHER_SEALING_SPECS_?</span>
+                        <span class="faq-icon text-blue-500 transition-transform duration-300">
+                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                        </span>
+                    </button>
+                    <div
+                        class="faq-content px-8 pb-8 text-zinc-400 font-medium leading-relaxed hidden border-t border-zinc-800/50 pt-8 mt-[-1px] reveal">
+                        Our Pelican builds feature marine-grade components and IP67 weather-resistant cases. While
+                        'waterproof' is a strong word, they are designed to handle heavy rain, splashes, and damp
+                        environments.
+                    </div>
+                </div>
+
+                <div
+                    class="bg-zinc-900/50 border border-zinc-800 rounded-sm overflow-hidden transition-all group hover:border-blue-500/50">
+                    <button
+                        class="faq-button w-full flex items-center justify-between p-8 text-left hover:bg-zinc-800/30 transition-colors">
+                        <span
+                            class="text-white font-black uppercase tracking-[0.2em] text-sm italic group-hover:text-blue-400 transition-colors">ENERGY_GRID_CAPACITY_?</span>
+                        <span class="faq-icon text-blue-500 transition-transform duration-300">
+                            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                        </span>
+                    </button>
+                    <div
+                        class="faq-content px-8 pb-8 text-zinc-400 font-medium leading-relaxed hidden border-t border-zinc-800/50 pt-8 mt-[-1px] reveal">
+                        On average, our standard systems provide 10-15 hours of playtime at moderate volumes.
+                        High-capacity upgrades are available for extended field deployments.
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-24 p-12 bg-blue-600/5 border border-blue-500/20 rounded-sm text-center reveal">
+                <p class="text-white font-black uppercase tracking-[0.3em] mb-6 mono text-xs">// END_OF_KNOWLEDGE_BASE
+                </p>
+                <a href="contact.html"
+                    class="text-blue-500 font-black uppercase tracking-[0.2em] hover:text-white transition-all underline decoration-2 underline-offset-8">
+                    OPEN_DIRECT_COMMS_CHANNEL →
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-zinc-950 border-t border-zinc-800 pt-12 pb-12 text-center">
+        <p class="text-zinc-600 text-[9px] font-black uppercase tracking-[0.5em] mono">// DATA_STREAM_TERMINATED</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
