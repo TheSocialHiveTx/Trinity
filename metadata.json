@@ -1,0 +1,7 @@
+{
+  "name": "Trinity Audio Concepts",
+  "description": "Professional, rugged custom portable stereo builds. Built tough, built loud with industrial craftsmanship and LED glow.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
